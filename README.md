@@ -1,4 +1,5 @@
-BookList App is available at piotrsitarek.pl/bookListApp
+BookList App is available at https://piotrsitarek.pl/bookListApp/
+
 
 ![MDB Logo](https://mdbootstrap.com/img/Marketing/general/logo/medium/mdb-r.png)
 
