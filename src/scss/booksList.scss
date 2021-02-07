@@ -1,0 +1,550 @@
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #bookList,
+    #bookList * {
+        visibility: visible;
+    }
+
+    #bookList {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.app_linkedIn--link {
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+
+    body {
+        background-color: lightgoldenrodyellow;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .app_form--button {
+        width: auto;
+        background-color: rgb(99, 243, 99);
+        color: white;
+        padding: 3px 5px;
+        margin: 8px 8px 8px 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .app_form--button:hover {
+        background-color: rgb(50, 202, 50);
+    }
+
+    header {
+        height: 2.2rem;
+        background-color: rgb(243, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .app_header {
+            text-align: center;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    .app_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .app_container--form {
+            width: 95%;
+            height: auto;
+            margin: 1rem 1rem 1rem 1rem;
+            padding: 1rem .7rem 1rem .7rem;
+            background-color: rgb(247, 221, 225);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .app_form--book {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .app_form--priorityContainer {
+                    margin: .2rem 0 .2rem 0;
+                    text-align: center;
+                    font-size: .7rem;
+
+                    .app_form--priorityInfo {
+                        font-size: .5rem;
+                        margin: .1rem 0 .1rem 0;
+                    }
+                }
+            }
+
+            .app_form--input {
+                width: 10rem;
+                padding: 3px 5px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            .app_form--select {
+                width: 10rem;
+                padding: 3px 5px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+
+            .app_form--genre {
+                margin: .5rem .5rem .5rem .5rem;
+                display: flex;
+            }
+
+            .app_form--sort {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .app_container--list {
+            width: 95%;
+            height: auto;
+            margin: 1rem 1rem 1rem 1rem;
+            padding: 1rem .3rem 1rem .3rem;
+            background-color: rgb(209, 236, 253);
+            overflow: scroll;
+
+            .app_table--list {
+                max-width: 100%;
+                font-size: .7rem;
+
+                .app_table--row {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .app_table--positionData {
+                width: 2.5%;
+                text-align: left;
+                padding: 2px 5px;
+            }
+
+            .app_table--titleData {
+                width: 35%;
+                overflow: visible;
+                white-space: initial;
+                text-align: center;
+            }
+
+            .app_table--authorData {
+                width: 25%;
+                white-space: nowrap;
+                overflow: hidden;
+                white-space: initial;
+                text-align: center;
+            }
+
+            .app_table--priorityData {
+                width: 2.5%;
+                text-align: center;
+            }
+
+            .app_table--categoryData {
+                width: 25%;
+                white-space: nowrap;
+                overflow: visible;
+                white-space: initial;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .fa-trash-alt {
+                width: 15px;
+                font-size: .5rem;
+                text-align: center;
+            }
+
+            .fa-edit {
+                width: 15px;
+                font-size: .5rem;
+                text-align: center;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}
+
+@media(min-width:450px)and(max-width:800px) {
+
+    body {
+        background-color: lightgoldenrodyellow;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .app_form--button {
+        width: auto;
+        background-color: rgb(99, 243, 99);
+        color: white;
+        padding: 3px 5px;
+        margin: 8px 8px 8px 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .app_form--button:hover {
+        background-color: rgb(50, 202, 50);
+    }
+
+    header {
+        height: 2.5rem;
+        background-color: rgb(243, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .app_header {
+            font-size: 1.6rem;
+        }
+    }
+
+    .app_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .app_container--form {
+            width: 95%;
+            height: auto;
+            margin: 1rem 1rem 1rem 1rem;
+            padding: 1rem 1rem 1rem 1rem;
+            background-color: rgb(247, 221, 225);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .app_form--book {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .app_form--priorityContainer {
+                    margin: .3rem 0 .3rem 0;
+                    text-align: center;
+                    font-size: .8rem;
+
+                    .app_form--priorityInfo {
+                        font-size: .6rem;
+                        margin: .2rem 0 .2rem 0;
+                    }
+                }
+            }
+
+            .app_form--input {
+                width: 10rem;
+                padding: 3px 5px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            .app_form--select {
+                width: 10rem;
+                padding: 3px 5px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                cursor: pointer;
+
+            }
+
+            .app_form--genre {
+                margin: .5rem .5rem .5rem .5rem;
+                display: flex;
+
+            }
+
+            .app_form--sort {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .app_container--list {
+            width: 95%;
+            height: auto;
+            margin: 1rem 1rem 1rem 1rem;
+            padding: 1rem 1rem 1rem 1rem;
+            background-color: rgb(209, 236, 253);
+
+            .app_table--list {
+                max-width: 100%;
+                font-size: .7rem;
+
+                .app_table--row {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .app_table--positionData {
+                width: 2.5%;
+                text-align: left;
+                padding: 2px 5px;
+            }
+
+            .app_table--titleData {
+                width: 35%;
+                overflow: visible;
+                white-space: initial;
+                text-align: center;
+            }
+
+            .app_table--authorData {
+                width: 25%;
+                white-space: nowrap;
+                overflow: hidden;
+                white-space: initial;
+                text-align: center;
+            }
+
+            .app_table--priorityData {
+                width: 2.5%;
+                text-align: center;
+            }
+
+            .app_table--categoryData {
+                width: 20%;
+                white-space: nowrap;
+                overflow: visible;
+                white-space: initial;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .fa-trash-alt {
+                width: 15px;
+                font-size: .5rem;
+                text-align: center;
+            }
+
+            .fa-edit {
+                width: 15px;
+                font-size: .5rem;
+                text-align: center;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}
+
+@media(min-width:800px) {
+    body {
+        background-color: lightgoldenrodyellow;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .app_form--button {
+        width: auto;
+        background-color: rgb(99, 243, 99);
+        color: white;
+        padding: 3px 5px;
+        margin: 8px 8px 8px 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .app_form--button:hover {
+        background-color: rgb(50, 202, 50);
+    }
+
+    header {
+        height: 2.5rem;
+        background-color: rgb(243, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .app_header {
+            font-size: 2rem;
+        }
+    }
+
+    .app_container {
+        display: flex;
+
+        .app_container--form {
+            width: 50%;
+            height: auto;
+            margin: 1rem 1rem 1rem 1rem;
+            padding: 1rem 1rem 1rem 1rem;
+            background-color: rgb(247, 221, 225);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .app_form--book {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .app_form--priorityContainer {
+                    margin: .5rem .5rem .5rem .5rem;
+                    text-align: center;
+                    font-size: .9rem;
+
+                    .app_form--priorityInfo {
+                        font-size: .65rem;
+                        margin: .2rem 0 .2rem 0;
+                    }
+                }
+            }
+
+            .app_form--input {
+                width: 10rem;
+                padding: 3px 5px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            .app_form--select {
+                width: 10rem;
+                padding: 3px 5px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+
+            .app_form--genre {
+                margin: .5rem .5rem .5rem .5rem;
+                display: flex;
+
+            }
+        }
+
+        .app_container--list {
+            width: 50%;
+            height: auto;
+            max-height: 80vh;
+            margin: 1rem 1rem 1rem 1rem;
+            padding: 1rem 1rem 1rem 1rem;
+            background-color: rgb(209, 236, 253);
+            overflow: scroll;
+            overflow-x: hidden;
+
+            .app_table--list {
+                max-width: 100%;
+                font-size: .7rem;
+
+                .app_table--row {
+                    width: 100%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+
+            .app_table--positionData {
+                width: 2.5%;
+                text-align: center;
+                padding: 2px 5px;
+            }
+
+            .app_table--titleData {
+                width: 35%;
+                overflow: hidden;
+                white-space: initial;
+                text-align: center;
+            }
+
+            .app_table--authorData {
+                width: 25%;
+                white-space: nowrap;
+                overflow: hidden;
+                white-space: initial;
+                text-align: center;
+            }
+
+            .app_table--priorityData {
+                width: 2.5%;
+                text-align: center;
+            }
+
+            .app_table--categoryData {
+                width: 20%;
+                white-space: nowrap;
+                overflow: visible;
+                white-space: initial;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .fa-trash-alt {
+                width: 15px;
+                font-size: .5rem;
+                text-align: center;
+            }
+
+            .fa-edit {
+                width: 15px;
+                font-size: .5rem;
+                text-align: center;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+}

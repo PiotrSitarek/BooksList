@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- <meta name="viewport" content="width=device-width" /> -->
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>MDB Webpack Starter</title>
+  <title>Books List </title>
   <!-- Favicon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/book.ico" type="image/x-icon" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <!-- Google Fonts Roboto -->
@@ -16,19 +17,65 @@
   <link rel="stylesheet" href="css/index.min.css" />
   <!-- Custom styles -->
   <style></style>
+  <script src="https://kit.fontawesome.com/da39467276.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Start your project here-->
-  <div class="container">
-    <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-      <div class="text-center">
-        <img src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png" style="width: 250px; height: 90px;" />
-        <h5 class="pt-3">Thank you for using our product. We're glad you're with us.</h5>
-        <p class="pb-5">MDB Team</p>
+      <header>
+      <h1 class="app_header"> Books List App</h1>
+    </header>    
+    <section class="app_container">
+    <section class="app_container--form">
+      <form class="app_form--book" id="addBookForm">       
+        <input class="app_form--input" type="text" id="bookTitle" placeholder="Title:" required="required" >      
+        <input class="app_form--input" type="text" id="bookAuthor" placeholder="Author:" required="required" >  
+        <select class="app_form--select"  id="genreList" required>    
+        </select>
+        <div class="app_form--priorityContainer">
+        <p>Priority:</p>
+        <p class="app_form--priorityInfo">(1=low => 5=high)</p>
+        <label for="1">1</label>
+        <input type="radio" name="priority" value="1" class="app_form--radioOptions" required='required'/>
+        <label for="2">2</label>
+        <input type="radio" name="priority" value="2" class="app_form--radioOptions" required='required'/>
+        <label for="3">3</label>
+        <input type="radio" name="priority" value="3" class="app_form--radioOptions" required='required'/>
+        <label for="4">4</label>
+        <input type="radio" name="priority" value="4" class="app_form--radioOptions" required='required'/>
+        <label for="5">5</label>
+        <input type="radio" name="priority" value="5" class="app_form--radioOptions" required='required'/>
       </div>
-    </div>
-  </div>
+        <button class="app_form--button"type="submit">Add</button>
+      </form>   
+      <form class="app_form--sort" id="addGenreForm">
+        <input class="app_form--input" type="text" id="addGenreInput" placeholder="Add new category:" maxlength="20">
+        <button class="app_form--button" type="submit">Add</button>
+      </form>
+      <form class="app_form--sort" id="sortForm">
+        <select class="app_form--select"  id="categorySortSelect" >
+          <option value="Author" class="app_form--selectOptionsSort">Author</option>
+          <option value="Category" class="app_form--selectOptionsSort">Category</option>
+          <option value="Priority" class="app_form--selectOptionsSort">Priority</option>
+      </select>        
+        <button class="app_form--button" type="submit" >Sort</button>
+      </form>  
+      <form class="app_form--sort" id="filterForm">      
+        <input class="app_form--input" type="text" id="filterByInput" placeholder="Filter by..." required="required" >  
+        <button class="app_form--button" type="submit" >Filter</button>
+      </form>    
+      <button class="app_form--button" id="refreshingButton">Refresh List</button>    
+       </section>
+    <section class="app_container--list" id="bookList">
+      <table class="app_table--list" id="tableList">
+      </table>      
+    </section>
+  </section>    
+    <footer>
+     <a class="app_linkedIn--link"href="https://www.linkedin.com/in/piotrsitarek/">@Piotr Sitarek for MDB</a> 
+      <button class="app_form--button" id="printButton">Print</button>
+    </footer>
+   
   <!-- End your project here-->
 
 </body>

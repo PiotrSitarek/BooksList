@@ -8,7 +8,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-eval-source-map',
   devServer: {
-    inline: true,
+    inline: true
   },
   plugins: [
     new Webpack.DefinePlugin({
